@@ -1,0 +1,11 @@
+// Tablet specific style overrides
+.subscriptions {
+  &__header {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

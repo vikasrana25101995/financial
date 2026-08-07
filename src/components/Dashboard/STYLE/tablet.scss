@@ -1,0 +1,14 @@
+// Tablet-specific style overrides
+.dashboard {
+  &__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__charts {
+    grid-template-columns: 1fr;
+  }
+
+  &__bottom-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,15 @@
+// Tablet specific style overrides
+.reports {
+  &__header {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__grid {
+    grid-template-columns: 1fr;
+  }
+}

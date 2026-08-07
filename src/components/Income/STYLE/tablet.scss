@@ -1,0 +1,7 @@
+// Tablet specific overrides for Income
+.income {
+  &__header {
+    flex-direction: row;
+    align-items: center;
+  }
+}

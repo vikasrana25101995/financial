@@ -1,0 +1,6 @@
+// Desktop specific style overrides
+.investments {
+  &__layout {
+    grid-template-columns: 2fr 1fr;
+  }
+}

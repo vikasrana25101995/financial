@@ -1,0 +1,15 @@
+// Tablet specific style overrides
+.investments {
+  &__header {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__layout {
+    grid-template-columns: 1fr;
+  }
+}

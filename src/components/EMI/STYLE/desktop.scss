@@ -1,0 +1,6 @@
+// Desktop specific style overrides
+.emi {
+  &__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

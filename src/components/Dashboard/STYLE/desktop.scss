@@ -1,0 +1,14 @@
+// Desktop-specific style overrides
+.dashboard {
+  &__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__charts {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  &__bottom-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

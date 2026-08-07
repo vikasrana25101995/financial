@@ -1,0 +1,10 @@
+// Tablet specific style overrides
+.daily-tracker {
+  &__preset-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

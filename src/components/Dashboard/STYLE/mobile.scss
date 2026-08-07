@@ -1,0 +1,138 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+  }
+
+  &__subtitle {
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  &__card {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition: box-shadow 0.2s;
+
+    &:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    &--highlight {
+      border-color: var(--primary);
+      background: linear-gradient(135deg, var(--card) 0%, rgba(var(--primary-rgb), 0.05) 100%);
+    }
+  }
+
+  &__card-title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted-foreground);
+    font-weight: 600;
+  }
+
+  &__card-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--foreground);
+  }
+
+  &__card-subtext {
+    font-size: 0.75rem;
+    color: var(--muted-foreground);
+  }
+
+  &__charts {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  &__chart-container {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    min-height: 350px;
+  }
+
+  &__chart-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  &__bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  &__recent {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    background-color: var(--muted);
+    font-size: 0.875rem;
+  }
+
+  &__item-name {
+    font-weight: 500;
+  }
+
+  &__item-date {
+    font-size: 0.75rem;
+    color: var(--muted-foreground);
+  }
+
+  &__item-amount {
+    font-weight: 600;
+    
+    &--income {
+      color: #10b981; // emerald
+    }
+    
+    &--expense {
+      color: #ef4444; // red
+    }
+  }
+}

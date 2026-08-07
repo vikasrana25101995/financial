@@ -1,0 +1,6 @@
+// Desktop specific style overrides
+.daily-tracker {
+  &__preset-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
